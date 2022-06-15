@@ -10,11 +10,14 @@ function pageSwitch() {
   rate.textContent = `You selected ${rates} out of 5`;
 }
 function displayRate(e) {
+  
   rates = e.currentTarget.textContent;
+  e.currentTarget.style.backgroundColor = "hsl(217, 12%, 63%)"
 }
 
 button.addEventListener("click", pageSwitch);
 // to display ratings dynmically
 for (let i = 0; i < 5; i++) {
   digits[i].addEventListener("click", displayRate);
+ 
 }
