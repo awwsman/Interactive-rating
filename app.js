@@ -3,7 +3,7 @@ const pageone = document.querySelector(".page-one");
 const button = document.querySelector("button");
 const digits = document.querySelectorAll(".digits");
 const rate = document.querySelector("#rate");
-var rates;
+var rates = 0;
 function pageSwitch() {
   pageone.style.display = "none";
   pagetwo.style.display = "block";
